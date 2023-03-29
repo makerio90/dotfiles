@@ -1,0 +1,25 @@
+[directory]
+truncation_length = 2000
+truncation_symbol = "../"
+read_only=''
+[git_branch]
+symbol = " "
+[git_status]
+conflicted = ""
+ahead =      " "
+behind =     "塚 "
+diverged =   "﨔 "
+up_to_date = " "
+untracked =  "﨔 "
+stashed =    " "
+modified =   " "
+staged =     '[++\($count\)](green)'
+renamed =    "ﲒ "
+deleted =    " "
+format =     '([$all_status$ahead_behind]($style) )'
+[line_break]
+disabled = true
+[rust]
+symbol=" "
+[cmd_duration]
+#disabled=true
