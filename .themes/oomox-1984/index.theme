@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=oomox-1984-dark-compact
+Comment=A Material Design theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=oomox-1984-dark-compact
+MetacityTheme=oomox-1984-dark-compact
+IconTheme=Adwaita
+CursorTheme=Adwaita
+CursorSize=24
