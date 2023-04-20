@@ -1,0 +1,54 @@
+* {
+	border: none;
+	border-radius: 0;
+	/* `otf-font-awesome` is required to be installed for icons */
+	font-family: Jetbrains Mono Nerd Font;
+	font-size: 10px;
+	min-height: 2px;
+	margin-bottom: 2px;
+}
+
+window#waybar {
+	background: transparent;
+	opacity: 0.8;
+}
+
+#workspaces {
+	margin-left: 4px;
+	transition: none;
+	background: #0d0f31;
+}
+
+#workspaces button {
+	transition: none;
+	color: rgba(70, 189, 255, 0.5);
+	background: transparent;
+	padding: 5px;
+	font-size: 18px;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+#workspaces button:hover {
+	transition: none;
+	box-shadow: inherit;
+	text-shadow: inherit;
+}
+
+#workspaces button.active {
+	color: rgba(70, 189, 255, 1);
+}
+
+#temperature,
+#memory,
+#mpris,
+#wireplumber,
+#cpu,
+#clock,
+#window,
+#keyboard-state {
+	padding-right: 10px;
+	padding-left: 10px;
+	transition: none;
+	color: #f1f1f1;
+	background: #0d0f31;
+}

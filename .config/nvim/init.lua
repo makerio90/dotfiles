@@ -84,6 +84,8 @@ require('packer').startup(function(use)
 	-- tabs! (like the ones at the top of your screen
 	use {'romgrk/barbar.nvim', requires = 'nvim-tree/nvim-web-devicons'}
 
+	-- Sudo edit ability
+	use { "lambdalisue/suda.vim" }
 	-- Add custom plugins to packer from ~/.config/nvim/lua/custom/plugins.lua
 	local has_plugins, plugins = pcall(require, 'custom.plugins')
 	if has_plugins then
@@ -229,7 +231,6 @@ require('telescope').setup {
 }
 -- make nvim transparent
 require("transparent").setup {
-	enable = true,
 	extra_groups = {
 		-- example of akinsho/nvim-bufferline.lua
 	},

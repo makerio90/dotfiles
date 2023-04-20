@@ -1,0 +1,89 @@
+{
+	"position": "bottom",
+	"height": 1,
+	"spacing": 4,
+	"modules-left": ["wlr/workspaces", "mpris"],
+	"modules-center": ["hyprland/window"],
+	"modules-right": ["wireplumber", "cpu", "memory", "temperature", "keyboard-state", "clock", "tray"],
+	"wlr/workspaces": {
+		"active-only": false,
+		"format": "{icon}",
+		"all-outputs": false,
+		"on-click": "activate",
+		"format-icons": {
+			"1": "󰖟",
+			"2": "",
+			"3": "",
+			"4": "",
+			"5": "󰖟",
+			"7": "",
+			"8": "",
+			"10": "",
+			"urgent": " "
+		},
+		"sort-by-number": true
+	},
+	"hyprland/window": {
+		"format": "{}",
+		"separate-outputs": true
+	},
+	"mpris": {
+		"format": "{player_icon} {dynamic}",
+		"format-paused": "{status_icon} <i>{dynamic}</i>",
+		"player-icons": {
+			"default": "▶",
+			"mpv": "🎵"
+		},
+		"status-icons": {
+			"paused": ""
+		}
+	},
+	"clock": {
+		"format": "{:%I:%M}  ",
+		"format-alt": "{:%A, %B %d, %Y (%R)}  "
+	},
+	"cpu": {
+		"format": "{usage}% ",
+		"tooltip": false
+	},
+	"memory": {
+		"format": "{}% "
+	},
+	"temperature": {
+		// "thermal-zone": 2,
+		// "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+		"critical-threshold": 80,
+		"format": "{temperatureC}°C {icon}",
+		"format-icons": ["", "", ""]
+	},
+	"keyboard-state": {
+		"numlock": true,
+		"format": {
+			"numlock": "N {icon}"
+		},
+		"format-icons": {
+			"locked": "",
+			"unlocked": ""
+		}
+	},
+	"network": {
+		// "interface": "wlp2*", // (Optional) To force the use of this interface
+		"format-wifi": "{essid} ({signalStrength}%) ",
+		"format-ethernet": "{ipaddr}/{cidr} ",
+		"tooltip-format": "{ifname} via {gwaddr} ",
+		"format-linked": "{ifname} (No IP) ",
+		"format-disconnected": "Disconnected ⚠",
+		"format-alt": "{ifname}: {ipaddr}/{cidr}"
+	},
+	"wireplumber": {
+		"format": "{volume}% 󰕾",
+		"on-click": "helvum",
+		// "interval": 1,
+		"on-scroll-up": "pw-volume change +1%",
+		"on-scroll-down": "pw-volume change -1%"
+	}
+}
+// this second } is compeatly unessicary and should cause an error, however removing it breaks evirything else. future me if
+// your reading this dont bother fixing it its not worth it please i just spent 2 fucking hours figuring out why this fucking
+// bracket neets to be here i hate everything
+}
