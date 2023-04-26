@@ -1,0 +1,3 @@
+[submodule ".config/nvim/nvim-1984"]
+	path = .config/nvim/nvim-1984
+	url = /home/makerio/Projects/nvim-1984/
